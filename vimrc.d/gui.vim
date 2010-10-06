@@ -8,4 +8,5 @@ if has("gui_running")
   "set guifont=Menlo Regular:h12
   set guifont=DejaVu\ Sans\ Mono:h12
   set mouse=nv         " only use mouse in normal and visual modes (notably not insert and command)
+  set mousemodel=popup_setpos
 endif
