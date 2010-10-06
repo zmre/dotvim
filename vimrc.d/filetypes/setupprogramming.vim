@@ -1,5 +1,5 @@
 function! SetupProgramming()
-  setlocal statusline=%f\ %y%r%1*%m%*%=%<x%02B%4vv%4cc%7l\ %P
+  SyntasticEnable
   setlocal matchpairs+=<:>  " % match < and > chars
   setlocal infercase " fuzzy case for keyword completion
   if v:version >= 703
@@ -17,4 +17,10 @@ function! SetupProgramming()
   setlocal cinwords=if,function,else,elif,elseif,try,except,finally,while,do,foreach,for,switch,case,<?php
   setlocal textwidth=0
   " TODO: setup autocmd to strip trailing whitespace lines and spaces per line
+  if has("autocmd")
+    augroup StripTrailingWhitespace
+      au!
+      autocmd BufWritePre * :call StripTrailingWhitespaces()
+    augroup END
+  endif
 endfunction

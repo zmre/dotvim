@@ -1,14 +1,14 @@
 " echo &ft to determine current filetype
 if has("autocmd")
   if has("filetype")
-    autocmd BufRead ~/mail/*        setlocal filetype=mail
-    autocmd BufRead /tmp/mutt*      setlocal filetype=mail
-    autocmd BufRead ~/.signature*   setlocal filetype=mail
-    autocmd BufRead ~/.mutt/*       setlocal filetype=muttrc
+    autocmd BufRead ~/mail/*          setlocal filetype=mail
+    autocmd BufRead /tmp/mutt*        setlocal filetype=mail
+    autocmd BufRead ~/.signature*     setlocal filetype=mail
+    autocmd BufRead ~/.mutt/*         setlocal filetype=muttrc
     autocmd BufRead ~/.sawfish/custom setlocal filetype=lisp
-    autocmd BufRead *.*html*        setlocal filetype=html
-    autocmd BufRead *.css*          setlocal filetype=css
-    autocmd BufRead *.txt*          setlocal textwidth=76
+    autocmd BufRead *.*html*          setlocal filetype=html
+    autocmd BufRead *.css*            setlocal filetype=css
+    autocmd BufRead *.rss             setlocal filetype=xml
   endif
   if v:version >= 600
     " Load all custom functions for specific filetypes
@@ -44,7 +44,7 @@ if has("autocmd")
     au BufRead,BufNewFile *.exe set filetype=binary
     au BufRead,BufNewFile *.dll set filetype=binary
     au BufRead,BufNewFile *.bin set filetype=binary
-    filetype on
+    "filetype on
   endif
 
   augroup vimrcEx

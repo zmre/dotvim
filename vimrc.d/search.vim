@@ -4,6 +4,4 @@
 "vnoremap / /\v
 setlocal ignorecase      " ignore case in searches
 setlocal smartcase
-setlocal wildmode=longest,list
-setlocal wildmenu
 setlocal incsearch       " do incremental searching

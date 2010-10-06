@@ -7,6 +7,7 @@ function! ResetDefaults()
   setlocal nojoinspaces  " don't insert two spaces after sentences on joins
   setlocal nobinary
   setlocal display=lastline
+  set viewoptions=folds,options,cursor,unix,slash " better unix / windows compatibility
 
   " line wrapping and numbering stuff
   setlocal wrap            " wrap lines
@@ -27,10 +28,11 @@ function! ResetDefaults()
   setlocal visualbell
   setlocal cursorline
   setlocal ttyfast
-  setlocal formatoptions=cqrn1                 " t=text, c=comments, q=format with "gq"
+  setlocal formatoptions=cqrn1   " t=text, c=comments, q=format with "gq"
   setlocal textwidth=79
   setlocal encoding=utf-8
   setlocal showmatch       " auto hilights matching bracket or paren
+  silent! augroup! StripTrailingWhitespace " delete the autocmd
 endfunction
 
 call ResetDefaults()
