@@ -55,6 +55,9 @@ map <leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
 " Set cwd to current file's dir
 map <leader>cd :lcd <C-R>=expand("%:p:h")<CR><CR>
 
+" Automatic shell
+nnoremap <leader>sh :ConqueTermVSplit bash<CR><ESC>:set nolist<CR>a
+
 if !has("gui_running")
   nnoremap <leader>m :emenu <C-Z>
   map #0 :emenu <C-Z>
