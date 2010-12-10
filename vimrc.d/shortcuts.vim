@@ -20,6 +20,11 @@ map #4 _Z
 map #7 :TlistToggle<CR>
 map! #7 :TlistToggle<CR>
 
+" Make F8 toggle the yankring
+map #8 :YRShow<CR>
+map! #8 :YRShow<CR>
+
+
 
 """"""""" Namespaced Shortcuts """""""""""
 
@@ -34,6 +39,7 @@ nnoremap <leader>7 <F7>
 nnoremap <leader>8 <F8>
 nnoremap <leader>9 <F9>
 nnoremap <leader>0 <F10>
+
 
 " use ',/' to clear the search
 nnoremap <leader>/ :noh<CR>
@@ -53,7 +59,8 @@ map <leader>es :sp <C-R>=expand("%:p:h") . "/" <CR>
 map <leader>ev :vsp <C-R>=expand("%:p:h") . "/" <CR>
 map <leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
 " Set cwd to current file's dir
-map <leader>cd :lcd <C-R>=expand("%:p:h")<CR><CR>
+map <leader>cd :cd %:h<CR>
+map <leader>lcd :lcd %:h<CR>
 
 " Automatic shell
 nnoremap <leader>sh :ConqueTermVSplit bash<CR><ESC>:set nolist<CR>a
@@ -74,7 +81,7 @@ nnoremap Y y$
 " Bubble lines up and down using the unimpaired plugin
 nmap <C-Up> [e
 nmap <C-Down> ]e
-vmap <C-Up> [egv
+vmap <C-Up> [eg
 vmap <C-Down> ]egv
 
 " Visually select the text that was last edited/pasted
