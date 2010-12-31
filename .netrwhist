@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/pwalsh/.vim'
 let g:netrw_dirhist_2='/Users/pwalsh/.vim/vimrc.d'
 let g:netrw_dirhist_3='/Users/pwalsh'
+let g:netrw_dirhist_4='/Users/pwalsh/Dev/lithium'

@@ -1,5 +1,5 @@
 function! SetupProgramming()
-  SyntasticEnable
+  "SyntasticEnable
   setlocal matchpairs+=<:>  " % match < and > chars
   setlocal infercase " fuzzy case for keyword completion
   if v:version >= 703

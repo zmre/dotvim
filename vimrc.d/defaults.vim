@@ -9,6 +9,9 @@ function! ResetDefaults()
   setlocal display=lastline
   set viewoptions=folds,options,cursor,unix,slash " better unix / windows compatibility
 
+  "set term=builtin_ansi
+  "set shortmess+=filmnrxoOtT      " abbrev. of messages (avoids 'hit enter')
+
   " line wrapping and numbering stuff
   setlocal wrap            " wrap lines
   setlocal sbr=            " show = at beginning of wrapped lines

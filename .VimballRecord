@@ -1,1 +1,2 @@
 DrawIt.vba: call delete('/Users/pwalsh/.vim/plugin/DrawItPlugin.vim')|call delete('/Users/pwalsh/.vim/plugin/cecutil.vim')|call delete('/Users/pwalsh/.vim/autoload/DrawIt.vim')|call delete('/Users/pwalsh/.vim/doc/DrawIt.txt')
+checksyntax.vba: call delete('/Users/pwalsh/.vim/doc/checksyntax.txt')|call delete('/Users/pwalsh/.vim/plugin/checksyntax.vim')|call delete('/Users/pwalsh/.vim/autoload/checksyntax.vim')
