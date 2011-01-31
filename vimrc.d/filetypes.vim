@@ -15,6 +15,7 @@ if has("autocmd")
     runtime! vimrc.d/filetypes/*.vim
 
     " Customize parameters for file types
+    autocmd FileType * exe('setl dict+='.$VIMRUNTIME.'/syntax/'.&filetype.'.vim')
     autocmd FileType c call SetupC()
     autocmd FileType ruby call SetupRuby()
     autocmd FileType php call SetupPHP()

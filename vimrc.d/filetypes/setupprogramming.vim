@@ -2,8 +2,16 @@ function! SetupProgramming()
   "SyntasticEnable
   setlocal matchpairs+=<:>  " % match < and > chars
   setlocal infercase " fuzzy case for keyword completion
+
   if v:version >= 703
     setlocal relativenumber
+    " Use the super clever tag for autocompletion and make it work like standard IDEs
+    inoremap <Tab> <C-R>=SuperCleverTab()<cr>
+    set completeopt=longest,menuone
+    inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+    inoremap <expr> <C-n> pumvisible() ? '<C-n>' : '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+    inoremap <expr> <M-,> pumvisible() ? '<C-n>' : '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+
   else
     setlocal nu        " show line numbers
   endif

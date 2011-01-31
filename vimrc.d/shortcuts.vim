@@ -26,6 +26,7 @@ map! #8 :YRShow<CR>
 
 
 
+
 """"""""" Namespaced Shortcuts """""""""""
 
 " NOTE: for each F key, make corresponding <leader># key in case terminal is stupid
@@ -48,7 +49,7 @@ nnoremap <leader>b GoZ<Esc>:g/^$/.,/./-j<CR>Gdd
 " reduce multiple blanks with spaces
 nnoremap <leader>n   GoZ<Esc>:g/^[ <Tab>]*$/.,/[^ <Tab>]/-j<CR>Gdd
 " use ,W to kill trailing whitespace on lines
-nnoremap <leader>W :call <SID>StripTrailingWhitespaces()<CR>
+nnoremap <leader>W :call StripTrailingWhitespaces()<CR>
 " bring up grep-like recursive search of curdir
 nnoremap <leader>a :Ack
 " display hex value of char under cursor

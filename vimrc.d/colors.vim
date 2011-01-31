@@ -6,7 +6,11 @@ if v:version >= 600
     "colorscheme oceanblack
     "colorscheme slate2
     "colorscheme Dark2
-    colorscheme ir_black
+    if &t_Co > 8 || has("gui_running")
+      colorscheme ir_black
+    else
+      colorscheme Dim
+    endif
 
 
     " Switch syntax highlighting on, when the terminal has colors
