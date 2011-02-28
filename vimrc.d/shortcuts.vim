@@ -54,6 +54,10 @@ nnoremap <leader>W :call StripTrailingWhitespaces()<CR>
 nnoremap <leader>a :Ack
 " display hex value of char under cursor
 nnoremap <leader>h ga
+" show current file in nerdtree
+nnoremap <leader>n :NERDTreeFind<CR>
+" show undo tree
+nnoremap <leader>u :GundoToggle<CR>
 " Start an edit command with current directory spelled out
 map <leader>ew :e <C-R>=expand("%:p:h") . "/" <CR>
 map <leader>es :sp <C-R>=expand("%:p:h") . "/" <CR>

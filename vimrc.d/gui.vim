@@ -10,3 +10,6 @@ if has("gui_running")
   set mouse=nv         " only use mouse in normal and visual modes (notably not insert and command)
   set mousemodel=popup_setpos
 endif
+if has('mouse')
+  set mouse=a
+endif

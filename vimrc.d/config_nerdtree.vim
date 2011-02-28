@@ -11,5 +11,5 @@
   let NERDTreeShowHidden = 1
 " Don't hijack NETRW
   "let NERDTreeHijackNetrw = 0
-  "let NERDTreeIgnore=['\.$', '\~$']
-
+  let NERDTreeIgnore=['CVS', '\.DS_Store', '\~$', '\.swp$', '\.dropbox', 'Icon..', '\._', '\.svn', 'application\/production\/', 'application\/stagin\/' ]
+  let NERDTreeQuitOnOpen = 1

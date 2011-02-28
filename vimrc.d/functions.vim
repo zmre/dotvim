@@ -28,4 +28,7 @@ function! SuperCleverTab()
     endif
 endfunction
 
-
+function! Colors256()
+  set t_Co=256
+  colorscheme ir_black
+endfunction

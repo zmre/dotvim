@@ -4,6 +4,7 @@ function! ResetDefaults()
   " Display hidden chars
   set list
   set listchars=tab:▸\ ,trail:+   " put +++ for trailing chars and > for tabs
+  syn sync minlines=5000
   setlocal nojoinspaces  " don't insert two spaces after sentences on joins
   setlocal nobinary
   setlocal display=lastline
