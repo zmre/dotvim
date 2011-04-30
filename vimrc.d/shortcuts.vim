@@ -16,9 +16,11 @@ map _z :set list<CR>:map #4 _Z<CR>
 map _Z :set nolist<CR>:map #4 _z<CR>
 map #4 _Z
 
-" Make F7 toggle the tags drawer
+" Make F7 toggle the tags drawer (and also ctrl-f7 for when f7 is being intercepted elsewhere)
 map #7 :TlistToggle<CR>
 map! #7 :TlistToggle<CR>
+map <c-F7> :TlistToggle<CR>
+map! <c-F7> :TlistToggle<CR>
 
 " Make F8 toggle the yankring
 map #8 :YRShow<CR>
