@@ -1,7 +1,8 @@
 " Load pathogen, used to install vim plugins as bundles in .vim/bundle
 filetype off
 call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+" Removed the following line since it significantly slows the loading of vim
+"call pathogen#helptags()
 filetype plugin indent on
 
 " Use Vim settings, rather than Vi settings (much better!).
