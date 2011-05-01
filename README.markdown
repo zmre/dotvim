@@ -21,13 +21,8 @@ I've added these as submodules.  So to clone and update, do this:
     git clone git://github.com/zmre/dotvim.git ~/.vim
     cd ~/.vim
     git submodule update --init
+    git submodule foreach git checkout master
     ln -s ~/.vim/vimrc ~/.vimrc
-
-And then every now and then, use these commands to update:
-
-    cd ~/.vim
-    git pull
-    git submodule foreach git pull
 
 Next, one of my favorite plugins is CommandT, which reproduces some TextMate
 functionality that I've tied to `,t`.  But this plugin is a pain in the butt as
@@ -40,5 +35,14 @@ some work to do before you can take advantage:
 If you get any errors like vim crashing on startup, it is likely due to
 CommandT and, in my experience, due to your vim being built with one version of
 ruby and your CommandT library being built with another.  If you're using
-`rvm`, be especially careful.
+`rvm`, be especially careful.  For my setup, using MacVim and Darwin Ports vim,
+I make sure to do `rvm use system` before `rake make`.
+
+Updating
+========
+Every now and then, use these commands to update:
+
+    cd ~/.vim
+    git pull
+    git submodule foreach git pull
 
