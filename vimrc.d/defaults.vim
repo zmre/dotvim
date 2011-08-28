@@ -3,6 +3,7 @@
 function! ResetDefaults()
   " Display hidden chars
   set list
+  setlocal encoding=utf-8
   set listchars=tab:▸\ ,trail:+   " put +++ for trailing chars and > for tabs
   syn sync minlines=5000
   setlocal nojoinspaces  " don't insert two spaces after sentences on joins
@@ -34,7 +35,6 @@ function! ResetDefaults()
   setlocal ttyfast
   setlocal formatoptions=cqrn1   " t=text, c=comments, q=format with "gq"
   setlocal textwidth=79
-  setlocal encoding=utf-8
   setlocal showmatch       " auto hilights matching bracket or paren
   silent! augroup! StripTrailingWhitespace " delete the autocmd
 endfunction

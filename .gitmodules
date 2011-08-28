@@ -58,3 +58,15 @@
 [submodule "vim-pathogen"]
 	path = vim-pathogen
 	url = https://github.com/tpope/vim-pathogen.git
+[submodule "bundle/vim-colors-solararized"]
+	path = bundle/vim-colors-solararized
+	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "scala-vim-support"]
+	path = scala-vim-support
+	url = git://github.com/rosstimson/scala-vim-support
+[submodule "bundle/vim-copy-as-rtf"]
+	path = bundle/vim-copy-as-rtf
+	url = https://github.com/aniero/vim-copy-as-rtf.git
+[submodule "bundle/vim-session"]
+	path = bundle/vim-session
+	url = https://github.com/xolox/vim-session/
